@@ -18,9 +18,11 @@ from django.urls import include
 from django.urls import path
 
 from force_app import urls as force_app_urls
+from users import urls as users_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include(force_app_urls))
+    path('', include(force_app_urls)),
+    path('', include(users_urls)),
 ]
