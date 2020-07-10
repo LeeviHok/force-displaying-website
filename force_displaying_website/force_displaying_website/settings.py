@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     # Custom apps
     'force_app.apps.ForceAppConfig',
+    'users.apps.UsersConfig',
 ]
 
 MIDDLEWARE = [
