@@ -1,0 +1,10 @@
+/* =============== Page base styles =============== */
+html, body {
+  min-height: 100vh;
+}
+
+#page-wrapper {
+  min-height: 100vh;
+  min-width: 15rem;
+}
+/* =============== End of page base styles =============== */
