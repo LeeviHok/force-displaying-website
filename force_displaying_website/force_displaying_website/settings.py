@@ -142,3 +142,7 @@ STATIC_URL = '/static/'
 
 # Model which is used for authentication
 AUTH_USER_MODEL = 'users.EmailUser'
+
+
+# Set django-crispy-forms to use bootstrap 4 templates
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
