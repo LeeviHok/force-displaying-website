@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Default apps ================
 
+    # Django Crispy Forms
+    'crispy_forms',
+
     # Custom apps
     'force_app.apps.ForceAppConfig',
     'users.apps.UsersConfig',
