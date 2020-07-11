@@ -1,0 +1,41 @@
+/* =============== Page base styles =============== */
+html, body {
+  min-height: 100vh;
+}
+
+#page-wrapper {
+  min-height: 100vh;
+  min-width: 15rem;
+}
+/* =============== End of page base styles =============== */
+
+
+/* =============== Navbar =============== */
+#topnav {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#topnav .navbar-brand {
+  font-weight: 800;
+}
+
+#topnav .nav-link {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+/* =============== End of navbar =============== */
+
+
+/* =============== Header =============== */
+#masthead {
+  height: 170px;
+  background: no-repeat center center;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 576px)  { #masthead{ height: 248px; } } /* Small */
+@media only screen and (min-width: 768px)  { #masthead{ height: 345px; } } /* Medium */
+@media only screen and (min-width: 1200px) { #masthead{ height: 540px; } } /* Extra large */
+/* =============== End of header =============== */
