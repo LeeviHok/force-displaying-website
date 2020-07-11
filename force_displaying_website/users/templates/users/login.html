@@ -1,5 +1,6 @@
 {% extends "force_app/common/base.html" %}
 {% load crispy_forms_tags %}
+{% load static %}
 
 
 {% block title %}
@@ -8,12 +9,20 @@
   </title>
 {% endblock title %}
 
+
 {% block page_content %}
-  <form method="POST">
-    {% csrf_token %}
+  <img id="login-bg" src="{% static 'users/img/Yoda.png' %}">
 
-    {{ form|crispy }}
+  <div id="login-container" class="d-flex justify-content-center align-items-center h-100">
+    <form id="login-form" class="d-flex flex-column" method="POST">
+      {% csrf_token %}
 
-    <button class="btn btn-primary" type="submit">Log in</button>
-  </form>
+      <h4>Login to Force app</h4>
+      <p class="mb-5">Enter your email address and password to log in</p>
+
+      {{ form|crispy }}
+
+      <button class="btn btn-green" type="submit">Log in</button>
+    </form>
+  </div>
 {% endblock page_content %}

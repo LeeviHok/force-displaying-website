@@ -8,3 +8,64 @@ html, body {
   min-width: 15rem;
 }
 /* =============== End of page base styles =============== */
+
+
+/* =============== Login =============== */
+#login-container {
+  min-height: 100vh;
+}
+
+#login-form {
+  width: 35rem;
+  padding: 1.5rem;
+  border-radius: .3rem;
+  background-color: rgba(0, 0, 0, .6)
+}
+
+#login-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  /* Full sized image with original aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#login-form label {
+  display: none;
+}
+
+#login-form h4 {
+  font-weight: 400;
+  color: white;
+}
+
+#login-form p {
+  color: rgba(255, 255, 255, .8);
+}
+/* =============== End of login =============== */
+
+
+/* =============== Button colors =============== */
+.btn.btn-green {
+  color: white;
+  background-color: #3c804f;
+  border-color: #3c804f;
+}
+
+.btn.btn-green:hover {
+  color: white;
+  background-color: #357045;
+  border-color: #326b42;
+}
+
+.btn.btn-green:focus {
+  color: white;
+  background-color: #357045;
+  border-color: #326b42;
+  box-shadow: 0 0 0 .2rem rgba(72, 180, 97, .5);
+}
+/* =============== End of button colors =============== */
