@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Default apps ================
 
+    # Django Channels
+    'channels',
+
     # Django Crispy Forms
     'crispy_forms',
 
@@ -91,7 +94,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'force_displaying_website.wsgi.application'
+#WSGI_APPLICATION = 'force_displaying_website.wsgi.application'
+ASGI_APPLICATION = "force_displaying_website.routing.application"
 
 
 # Database

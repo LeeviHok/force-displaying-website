@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 django = ">=3"
 django-crispy-forms = "*"
+channels = "*"
 
 [requires]
 python_version = "3.8"
