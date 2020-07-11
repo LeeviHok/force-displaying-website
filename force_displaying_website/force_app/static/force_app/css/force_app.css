@@ -21,7 +21,7 @@ html, body {
 
 #topnav .nav-link {
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: .8px;
   font-size: 0.75rem;
   font-weight: 800;
 }
