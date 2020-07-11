@@ -13,6 +13,19 @@
 {% block page_content %}
   <img id="login-bg" src="{% static 'users/img/Yoda.png' %}">
 
+  <div id="login-message-container">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-{{message.tags}} alert-dismissible fade show mt-3" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+
   <div id="login-container" class="d-flex justify-content-center align-items-center h-100">
     <form id="login-form" class="d-flex flex-column" method="POST">
       {% csrf_token %}

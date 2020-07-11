@@ -150,3 +150,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_URL = 'users-login'               # URL address for login page
 LOGIN_REDIRECT_URL = 'force_app-home'   # URL address where to redirect after login
+LOGOUT_REDIRECT_URL = 'users-login'     # URL address where to redirect after logout
