@@ -4,5 +4,6 @@ from force_app import consumers
 
 
 websocket_urlpatterns = [
-    path('ws/force_data_api/', consumers.ForceDataApi),
+    path('ws/force_api/', consumers.ForceApi),
+    path('ws/force_chart/', consumers.ForceChart),
 ]
