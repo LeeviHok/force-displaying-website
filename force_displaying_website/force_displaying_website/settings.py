@@ -94,7 +94,6 @@ TEMPLATES = [
     },
 ]
 
-#WSGI_APPLICATION = 'force_displaying_website.wsgi.application'
 ASGI_APPLICATION = "force_displaying_website.routing.application"
 
 
