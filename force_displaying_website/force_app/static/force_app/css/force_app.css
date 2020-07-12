@@ -30,12 +30,12 @@ html, body {
 
 /* =============== Header =============== */
 #masthead {
-  height: 170px;
+  height: 120px;
   background: no-repeat center center;
   background-size: cover;
 }
 
-@media only screen and (min-width: 576px)  { #masthead{ height: 248px; } } /* Small */
-@media only screen and (min-width: 768px)  { #masthead{ height: 345px; } } /* Medium */
-@media only screen and (min-width: 1200px) { #masthead{ height: 540px; } } /* Extra large */
+@media only screen and (min-width: 576px)  { #masthead{ height: 200px; } } /* Small */
+@media only screen and (min-width: 768px)  { #masthead{ height: 280px; } } /* Medium */
+@media only screen and (min-width: 1200px) { #masthead{ height: 360px; } } /* Extra large */
 /* =============== End of header =============== */
