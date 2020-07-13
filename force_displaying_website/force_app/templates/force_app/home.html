@@ -1,4 +1,5 @@
 {% extends "force_app/common/base.html" %}
+{% load static %}
 
 
 {% block title %}
@@ -18,5 +19,21 @@
 
 {% block page_content %}
   <div class="container-lg pt-5">
+    <canvas id="force-chart" width="5" height="2"></canvas>
   </div>
 {% endblock page_content %}
+
+
+{% block css %}
+  <!-- Chart.js CSS -->
+  <link rel="stylesheet" type="text/css" href="{% static 'force_app/css/Chart.css' %}">
+{% endblock css %}
+
+
+{% block javascript %}
+  <!-- Chart.js -->
+  <script type="text/javascript" src="{% static 'force_app/js/Chart.js' %}"></script>
+
+  <!-- Custom JavaScript -->
+  <script type="text/javascript" src="{% static 'force_app/js/force_chart.js' %}"></script>
+{% endblock javascript %}
