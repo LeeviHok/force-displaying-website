@@ -68,6 +68,9 @@ class forceChartClass {
                 tooltips: {
                     enabled: false,
                 },
+                animation: {
+                    duration: 500,
+                },
             },
         });
 
