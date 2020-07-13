@@ -1,3 +1,4 @@
 .venv/
+__pycache__/
 force_displaying_website/static/
 force_displaying_website/db.sqlite3

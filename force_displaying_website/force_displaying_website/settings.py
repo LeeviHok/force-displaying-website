@@ -40,7 +40,7 @@ SECRET_KEY = get_env_var_value('FORCE_DISPLAYING_WEBSITE_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True if get_env_var_value('FORCE_DISPLAYING_WEBSITE_DEBUG') == 'True' else False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['daphne']
 
 
 # Application definition
