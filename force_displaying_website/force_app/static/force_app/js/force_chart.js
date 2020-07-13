@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     /* Connect to WebSocket */
     let domain = window.location.host;
-    domain = domain.replace('\/+$', '');    // Remove all slashes from end 
+    domain = domain.replace('\/+$', '');    // Remove all slashes from end
     forceChartSocket = new WebSocket(
         `ws://${domain}/ws/force_chart/`
     );
@@ -69,7 +69,8 @@ class forceChartClass {
                     enabled: false,
                 },
                 animation: {
-                    duration: 500,
+                    duration: 300,
+                    easing: 'linear',
                 },
             },
         });
