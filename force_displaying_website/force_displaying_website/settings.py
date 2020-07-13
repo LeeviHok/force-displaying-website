@@ -102,8 +102,12 @@ ASGI_APPLICATION = "force_displaying_website.routing.application"
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(BASE_DIR/'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': get_env_var_value('FORCE_DISPLAYING_WEBSITE_DATABASE_NAME'),
+        'USER': get_env_var_value('FORCE_DISPLAYING_WEBSITE_DATABASE_USER_NAME'),
+        'PASSWORD': get_env_var_value('FORCE_DISPLAYING_WEBSITE_DATABASE_PASSWORD'),
+        'HOST': get_env_var_value('FORCE_DISPLAYING_WEBSITE_DATABASE_HOST'),
+        'PORT': get_env_var_value('FORCE_DISPLAYING_WEBSITE_DATABASE_PORT'),
     }
 }
 
@@ -141,6 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR/'static'
 
 
 # Model which is used for authentication
